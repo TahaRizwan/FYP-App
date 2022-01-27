@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //validate data
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //email format is invalid dont proceed furthur.
+            //email format is invalid don't proceed further.
             binding.email.setError("Invalid Email Format");
         }
         else if (TextUtils.isEmpty(password)){
